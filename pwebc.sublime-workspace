@@ -1,0 +1,886 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tabl",
+				"table_column_var"
+			],
+			[
+				"tail",
+				"tailsize\tnumber"
+			],
+			[
+				"tab",
+				"tabObject"
+			],
+			[
+				"rep",
+				"repOK"
+			],
+			[
+				"argu",
+				"argument2"
+			],
+			[
+				"argm",
+				"argument1"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"text",
+				"text-center\ttext-center"
+			],
+			[
+				"cards",
+				"cardsNotSelected"
+			],
+			[
+				"opac",
+				"opacity"
+			],
+			[
+				"tab-",
+				"tab-content"
+			],
+			[
+				"thum",
+				"img-thumbnail"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"ali-",
+				"align-items-center\talign-items-center"
+			],
+			[
+				"justi",
+				"justify-content-center\tjustify-content-center"
+			],
+			[
+				"justify",
+				"justify-content-center\tjustify-content-center"
+			],
+			[
+				"align-",
+				"align-items-end\talign-items-end"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"si",
+				"sidebar-trigger"
+			],
+			[
+				"mobile",
+				"mobilecheck"
+			],
+			[
+				"m",
+				"msnry"
+			],
+			[
+				"grid",
+				"grid-item"
+			],
+			[
+				"justif",
+				"justify-content-center\tjustify-content-center"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"po",
+				"projects"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"transition",
+				"transition-duration"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"descri",
+				"description_project"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"form",
+				"form_input\tCI - Form Helper - Input Field"
+			],
+			[
+				"packaging",
+				"packagingvalue"
+			],
+			[
+				"pack",
+				"packaging"
+			],
+			[
+				"con",
+				"controller\tCI - Base Controller"
+			],
+			[
+				"itemfo",
+				"ItemFormatId"
+			],
+			[
+				"itemform",
+				"itemformats"
+			],
+			[
+				"itemFo",
+				"itemFormatLength"
+			],
+			[
+				"item",
+				"itemformats"
+			],
+			[
+				"itemformat",
+				"itemformatwidth"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"color",
+				"colorname"
+			],
+			[
+				"grid-co",
+				"grid-column"
+			],
+			[
+				"grid-auto-",
+				"grid-auto-rows"
+			],
+			[
+				"grid-templa",
+				"grid-template-columns"
+			],
+			[
+				"bo",
+				"border"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 154.0,
+		"last_filter": "reind",
+		"selected_items":
+		[
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"instal",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"riend",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"unin",
+				"Colorsublime: Uninstall Theme"
+			],
+			[
+				"instak",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"Cheat Sheet",
+				"Cheat Sheet: Sublime Text"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"cheasu",
+				"Cheatsheet: Ubuntu"
+			],
+			[
+				"cheat",
+				"Cheatsheet: CSS"
+			],
+			[
+				"instap",
+				"Package Control: Install Package"
+			],
+			[
+				"uni",
+				"Snippet: + Shortcut to Include"
+			],
+			[
+				"mini",
+				"Minify Javascript/CSS"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rien",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"setjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"setcss",
+				"Set Syntax: CSS"
+			],
+			[
+				"setjavasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"seth",
+				"Set Syntax: HTML"
+			],
+			[
+				"setscss",
+				"Set Syntax: CSS"
+			]
+		],
+		"width": 410.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/ruru/Documents/workspace/s4a/pwebc/projet"
+	],
+	"file_history":
+	[
+		"/C/Users/laptop/Downloads/positions-geographiques-des-stations-du-reseau-ratp.json",
+		"/D/ruru/Documents/workspace/appmob/db.sql",
+		"/D/ruru/Documents/workspace/pjs4/blockyPlayground/firstattempt/index.html",
+		"/D/ruru/Documents/workspace/pjs4/blockyPlayground/firstattempt/blocks/operators.js",
+		"/D/ruru/Documents/workspace/pjs4/blockyPlayground/firstattempt/blocks/fields.js",
+		"/D/ruru/Documents/workspace/pjs4/blockyPlayground/firstattempt/blocks/essai.js",
+		"/C/Users/laptop/Downloads/firstattempt",
+		"/D/ruru/Documents/workspace/pjs4/blockyPlayground/firstattempt/blocks.js",
+		"/D/ruru/Documents/workspace/pjs4/blockyPlayground/playground/index.html",
+		"/D/ruru/Documents/workspace/pjs4/blockyPlayground/first",
+		"/D/ruru/Documents/workspace/pjs4/blockyPlayground/playground/sqlBlockly/customblocks.js",
+		"/D/ruru/Documents/workspace/pjs4/blockyPlayground/sql",
+		"/D/ruru/Documents/workspace/pjs4/blockyPlayground/playground/sqlBlockly/index.html",
+		"/D/ruru/Documents/workspace/jsplay/snakelike/snakelikescript.js",
+		"/D/ruru/Documents/workspace/jsplay/snakelike/snakelike.html",
+		"/D/ruru/Documents/workspace/jsplay/snake/snake.html",
+		"/D/ruru/Documents/workspace/s4a/pwebc/TP2-1 QCM/TP2-2 qcmTab/scriptJS/qcm.js",
+		"/D/ruru/Documents/workspace/s4a/pwebc/TP2-1 QCM/TP2-2 qcmTab/questions.txt",
+		"/D/ruru/Documents/workspace/s4a/pwebc/TP2-1 QCM/TP2-2 qcmTab/qcm.html",
+		"/D/pjs4/playground/js/playground.js",
+		"/D/pjs4/playground/index.html",
+		"/D/pjs4/playground/js/play.js",
+		"/D/pjs4/playground/blockly/blocks/loops.js",
+		"/D/ruru/Documents/workspace/aps/index.php",
+		"/D/ruru/Documents/workspace/MPA2K17/menu.html",
+		"/D/ruru/Documents/workspace/MPA2K17/alpesmaritimes/gastronomie.html",
+		"/D/ruru/Documents/workspace/MPA2K17/var/gastronomie.html",
+		"/D/ruru/Documents/workspace/MPA2K17/var/seLoger.html",
+		"/D/ruru/Documents/workspace/MPA2K17/var/sortir.html",
+		"/D/ruru/Documents/workspace/MPA2K17/var/visite.html",
+		"/D/ruru/Documents/workspace/MPA2K17/vaucluses/gastronomie.html",
+		"/D/ruru/Documents/workspace/MPA2K17/vaucluses/seLoger.html",
+		"/D/ruru/Documents/workspace/MPA2K17/vaucluses/sortir.html",
+		"/D/ruru/Documents/workspace/MPA2K17/vaucluses/visite.html",
+		"/D/ruru/Documents/workspace/MPA2K17/alpesmaritimes/seLoger.html",
+		"/D/ruru/Documents/workspace/MPA2K17/alpesmaritimes/sortir.html",
+		"/D/ruru/Documents/workspace/MPA2K17/alpesmaritimes/visite.html",
+		"/D/ruru/Documents/workspace/MPA2K17/bouchedurhone/gastronomie.html",
+		"/D/ruru/Documents/workspace/MPA2K17/bouchedurhone/seLoger.html",
+		"/D/ruru/Documents/workspace/MPA2K17/bouchedurhone/sortir.html",
+		"/D/ruru/Documents/workspace/MPA2K17/bouchedurhone/visite.html",
+		"/D/ruru/Documents/workspace/MPA2K17/hautesalpes/gastronomie.html",
+		"/D/ruru/Documents/workspace/MPA2K17/hautesalpes/seLoger.html",
+		"/D/ruru/Documents/workspace/MPA2K17/hautesalpes/sortir.html",
+		"/D/ruru/Documents/workspace/MPA2K17/hautesalpes/visite.html",
+		"/D/ruru/Documents/workspace/MPA2K17/CSS/struct.css",
+		"/D/ruru/Documents/workspace/MPA2K17/regions/vaucluses.html",
+		"/D/ruru/Documents/workspace/MPA2K17/regions/var.html",
+		"/D/ruru/Documents/workspace/MPA2K17/regions/regions.html",
+		"/D/ruru/Documents/workspace/MPA2K17/regions/alpeshauteprovence.html",
+		"/D/ruru/Documents/workspace/MPA2K17/regions/alpesmaritimes.html",
+		"/D/ruru/Documents/workspace/MPA2K17/regions/bouchedurhone.html",
+		"/D/ruru/Documents/workspace/MPA2K17/regions/hautesalpes.html",
+		"/D/ruru/Documents/workspace/MPA2K17/alpeshauteprovence/gastronomie.html",
+		"/D/ruru/Documents/workspace/MPA2K17/alpeshauteprovence/seLoger.html",
+		"/D/ruru/Documents/workspace/MPA2K17/alpeshauteprovence/sortir.html",
+		"/D/ruru/Documents/workspace/MPA2K17/alpeshauteprovence/visite.html",
+		"/D/ruru/Documents/workspace/MPA2K17/accueil.html",
+		"/D/ruru/Documents/workspace/MPA2K17/CSS/struct768.css",
+		"/D/ruru/Documents/workspace/MPA2K17/gastro.html",
+		"/D/ruru/Documents/workspace/MPA2K17/CSS/struct1200.css",
+		"/D/ruru/Documents/workspace/MPA2K17/CSS/struct992.css",
+		"/D/ruru/Documents/workspace/MPA2K17/loger.html",
+		"/D/ruru/Documents/workspace/MPA2K17/sortir.html",
+		"/D/ruru/Documents/workspace/MPA2K17/visite.html",
+		"/D/ruru/Documents/workspace/MPA2K17/modele body.html",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/Cheat Sheets/cheat-sheets/Sublime Text.cheatsheet",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/Cheatsheet/database/os/ubuntu.cheatsheet",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/Cheatsheet/database/code/language/css.cheatsheet",
+		"/C/Users/laptop/Downloads/portfolio.sql",
+		"/D/ruru/Documents/workspace/portfolio/public/js/projectsTab9.js",
+		"/D/ruru/Documents/workspace/portfolio/resources/views/pages/projects2.blade.php",
+		"/D/ruru/Documents/workspace/portfolio/resources/views/projects/show.blade.php",
+		"/D/ruru/Documents/workspace/portfolio/resources/views/pages/show.blade.php",
+		"/D/ruru/Documents/workspace/portfolio/resources/views/pages/hobbies.blade.php",
+		"/D/ruru/Documents/workspace/portfolio/resources/views/pages/about.blade.php",
+		"/D/ruru/Documents/workspace/portfolio/app/Http/Controllers/PagesController.php",
+		"/D/ruru/Documents/workspace/portfolio/resources/views/pages/projects.blade.php",
+		"/D/ruru/Documents/workspace/portfolio/app/Project.php",
+		"/D/ruru/Documents/workspace/portfolio/public/css/master.css",
+		"/D/ruru/Documents/workspace/portfolio/public/js/about.js",
+		"/D/ruru/Documents/workspace/portfolio/resources/views/partials/master.blade.php",
+		"/D/ruru/Documents/workspace/portfolio/resources/views/pages/index.blade.php",
+		"/D/ruru/Documents/workspace/portfolio/public/js/index3.js",
+		"/D/ruru/Documents/workspace/portfolio/resources/views/partials/sidebar.blade.php",
+		"/F/PROJETS DUT/7.AAV/src/app/Manager.java",
+		"/F/PROJETS DUT/7.AAV/src/sacs/factories/BagFactory.java",
+		"/D/ruru/Documents/workspace/portfolio/routes/web.php",
+		"/D/ruru/Documents/workspace/portfolio/public/index3.js",
+		"/D/ruru/Documents/workspace/portfolio/public/js/sidebar.js",
+		"/D/ruru/Documents/workspace/portfolio/.env",
+		"/D/ruru/Documents/workspace/portfolio/public/js/resizeCard.js",
+		"/D/ruru/Documents/workspace/portfolio/public/js/scrollreveal.min.js",
+		"/C/Users/laptop/Downloads/bdd1.sql",
+		"/C/Users/laptop/Documents/ndf/ndfapi/app/Models/Team.php",
+		"/C/Users/laptop/Documents/ndf/ndfapi/app/Models/Role.php",
+		"/C/Users/laptop/Documents/ndf/ndfapi/app/Model/Person.php",
+		"/C/Users/laptop/Documents/ndf/ndfweb/test.js",
+		"/C/Users/laptop/Documents/ndf/ndfweb/css/creative.css",
+		"/C/Users/laptop/Documents/ndf/ndfweb/index.html",
+		"/C/Users/laptop/Documents/ndf/ionic/firsttry/TestIonic/src/pages/home/home.html",
+		"/C/Users/laptop/Documents/ndf/ionic/firsttry/TestIonic/src/app/app.component.ts",
+		"/C/Users/laptop/Documents/ndf/ionic/firsttry/TestIonic/src/app/app.html",
+		"/C/Users/laptop/Documents/ndf/ionic/firsttry/TestIonic/src/pages/about/about.ts",
+		"/C/Users/laptop/Documents/ndf/ionic/firsttry/TestIonic/src/app/app.module.ts",
+		"/C/Users/laptop/Documents/ndf/ionic/firsttry/TestIonic/src/pages/about/about.scss",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Packagings/edit.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Packagings/add.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Packagings/index.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/models/Packaging.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/models/Unit.php",
+		"/D/ruru/Documents/workspace/pro/tls/crudv2/crud_datas.sql",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/controllers/Packagings.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/controllers/Users.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/controllers/Welcome.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Template/header.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Itemformats/edit.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Itemformats/add.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Itemformats/index.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/models/Itemformat.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/controllers/Itemformats.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/controllers/Itemranges.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Colors/index.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Colors/edit.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/controllers/Colors.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Groups/add.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/application/views/Colors/add.php",
+		"/D/ruru/Documents/workspace/pro/tls/crud/app/.htaccess"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"script",
+			"floor"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 47.0
+	},
+	"input":
+	{
+		"height": 59.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pwebc.sublime-project",
+	"replace":
+	{
+		"height": 90.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"blocks/",
+				"playground\\blockly\\blocks\\loops.js"
+			],
+			[
+				"str",
+				"CSS\\struct768.css"
+			],
+			[
+				"stru",
+				"CSS\\struct.css"
+			],
+			[
+				"a",
+				"accueil.html"
+			],
+			[
+				"ac",
+				"accueil.html"
+			],
+			[
+				"reg",
+				"regions\\regions.html"
+			],
+			[
+				"master.css",
+				"public\\css\\master.css"
+			],
+			[
+				"hobbies",
+				"resources\\views\\pages\\hobbies.blade.php"
+			],
+			[
+				"pro",
+				"public\\js\\projectsTab9.js"
+			],
+			[
+				"ma.css",
+				"public\\css\\master.css"
+			],
+			[
+				"proje.bla",
+				"resources\\views\\pages\\projects.blade.php"
+			],
+			[
+				"show.",
+				"resources\\views\\projects\\show.blade.php"
+			],
+			[
+				"show.b",
+				"resources\\views\\pages\\show.blade.php"
+			],
+			[
+				"projec",
+				"app\\Project.php"
+			],
+			[
+				"page",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"tagprojec",
+				"database\\migrations\\2018_01_08_134034_create_project_tag_table.php"
+			],
+			[
+				"createt",
+				"database\\migrations\\2018_01_08_133621_create_tags_table.php"
+			],
+			[
+				"tag",
+				"app\\Tags.php"
+			],
+			[
+				"about.bl",
+				"resources\\views\\pages\\about.blade.php"
+			],
+			[
+				"about",
+				"public\\js\\about.js"
+			],
+			[
+				"master.",
+				"public\\css\\master.css"
+			],
+			[
+				"proj",
+				"public\\js\\projectsTab9.js"
+			],
+			[
+				"contr/pro",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"proj.b",
+				"resources\\views\\pages\\projects.blade.php"
+			],
+			[
+				"pagesc",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"index.b",
+				"resources\\views\\pages\\index.blade.php"
+			],
+			[
+				"show",
+				"resources\\views\\projects\\show.blade.php"
+			],
+			[
+				"rweb",
+				"routes\\web.php"
+			],
+			[
+				"side",
+				"resources\\views\\partials\\sidebar.blade.php"
+			],
+			[
+				"pro.blade",
+				"resources\\views\\pages\\projects.blade.php"
+			],
+			[
+				"pro.bla",
+				"resources\\views\\pages\\projects.blade.php"
+			],
+			[
+				"mas.ba",
+				"resources\\views\\partials\\master.blade.php"
+			],
+			[
+				"master",
+				"public\\css\\master.css"
+			],
+			[
+				"ma",
+				"public\\css\\master.css"
+			],
+			[
+				"side.bal",
+				"resources\\views\\partials\\sidebar.blade.php"
+			],
+			[
+				"proj.bl",
+				"resources\\views\\projects\\show.blade.php"
+			],
+			[
+				"sidebar.",
+				"resources\\views\\partials\\sidebar.blade.php"
+			],
+			[
+				"si",
+				"public\\js\\sidebar.js"
+			],
+			[
+				"sideba",
+				"public\\js\\sidebar.js"
+			],
+			[
+				"sidebar.b",
+				"resources\\views\\partials\\sidebar.blade.php"
+			],
+			[
+				"resi",
+				"public\\js\\resizeCard.js"
+			],
+			[
+				"master.ba",
+				"resources\\views\\partials\\master.blade.php"
+			],
+			[
+				"project",
+				"public\\js\\projectsTab.js"
+			],
+			[
+				"header",
+				"application\\views\\Template\\header.php"
+			],
+			[
+				"he",
+				"application\\views\\Template\\header.php"
+			],
+			[
+				"colors/ed",
+				"application\\views\\Colors\\edit.php"
+			],
+			[
+				"head",
+				"application\\views\\Template\\header.php"
+			],
+			[
+				"add",
+				"application\\views\\Groups\\add.php"
+			],
+			[
+				"colors",
+				"application\\controllers\\Colors.php"
+			],
+			[
+				"coloin",
+				"application\\views\\Colors\\index.php"
+			],
+			[
+				"colo/",
+				"application\\views\\Colors\\add.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 309.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
