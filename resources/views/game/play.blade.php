@@ -49,6 +49,17 @@
 		width: 100%;
 		z-index: 50;
 	}
+
+	.endScreen {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 800px;
+		width: 100%;
+		background-color: rgba(255,255,255, 0.8);
+		z-index: 100;
+	}
 </style>
 @endsection
 
@@ -91,6 +102,21 @@
 						</div>
 					</div>
 				</div>
+				<div class="endScreen">
+					<table class="h-100 w-50 mx-auto">
+						<tbody>
+							<tr>
+								<td class="align-middle text-center">
+									<h1>Bien joué !</h1>
+									<p class="lead">
+										Votre score est de <span class="score"></span>
+									</p>
+									<button class="btn btn-primary" id="restartButton" style="">Rejouer</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -105,6 +131,7 @@ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
 <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
 <script src="/js/map.js"></script>
+<script src="/js/gameUI.js"></script>
 <script src="/js/game.js"></script>
 <script>
 	$(document).ready(function() {
@@ -115,7 +142,7 @@ crossorigin="anonymous"></script>
 		});
 
 		window.addEventListener('available', function() {
-			game.launch();
+			//game.initTurn();
 		}, false);
 		game.init();
 		

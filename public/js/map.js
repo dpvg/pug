@@ -4,23 +4,14 @@ class Map {
 		this.container = mapConfig.container;
 		this.mapboxToken = mapConfig.token;
 		this.mapBounds = mapConfig.bounds;
-		this.mapbox = null;
-		this.marker = null;
-		this.markerEl = null;
-		this.marker2 = null;
-		this.markerEl2 = null;
-		this.line = null;
-	}
 
-	restart() {
-		this.marker.remove();
-		this.marker = null;
-		this.markerEl = null;
-		this.marker2.remove();
-		this.marker2 = null;
-		this.markerEl2 = null;
-		this.mapbox.removeLayer("route");
-		this.mapbox.removeSource("route");
+		this.mapbox = null;
+		
+		this.toDiscoverMarker = null;
+		this.toDiscoverMarkerEl = null;
+		this.playerMarker = null;
+		this.playerMarkerEl = null;
+
 		this.line = null;
 	}
 
@@ -33,52 +24,65 @@ class Map {
 		});
 	}
 
+	restart() {
+		this.removeMarkers();
+	}
+
+	drawToDiscoverMarker(map, lng, lat) {
+		map.toDiscoverMarkerEl = document.createElement('div');
+		map.toDiscoverMarkerEl.className = 'point rounded green';
+		map.toDiscoverMarker = new mapboxgl.Marker(map.toDiscoverMarkerEl)
+			.setLngLat([lng, lat])
+			.addTo(map.mapbox);
+	}
+
+	drawPlayerMarker(map, lng, lat) {
+		map.playerMarkerEl = document.createElement('div');
+		map.playerMarkerEl.className = 'point rounded red';
+		map.playerMarker = new mapboxgl.Marker(map.playerMarkerEl)
+			.setLngLat([lng, lat])
+			.addTo(map.mapbox);
+	}
+
+	drawLineBetweenMarkers(map, coordinates) {
+		map.line = map.mapbox.addLayer({
+			"id": "route",
+			"type": "line",
+			"source": {
+				"type": "geojson",
+				"data": {
+					"type": "Feature",
+					"properties": {},
+					"geometry": {
+						"type": "LineString",
+						"coordinates": coordinates
+					}
+				}
+			},
+			"layout": {
+				"line-join": "round",
+				"line-cap": "round"
+			},
+			"paint": {
+				"line-color": "rgba(52, 73, 94,1.0)",
+				"line-width": 5
+			}
+		});
+	}
+
 	setUpEventListener(game) {
 		var map = this;
 		this.mapbox.on('click', function(event) {
-			if (map.markerEl == null && map.markerEl2 == null) {
-				map.markerEl = document.createElement('div');
-	  			map.markerEl.className = 'point rounded green';
-				map.marker = new mapboxgl.Marker(map.markerEl)
-				  .setLngLat([game.stationToDiscover.fields.stop_lon, game.stationToDiscover.fields.stop_lat])
-				  .addTo(map.mapbox);
+			if (map.playerMarker == null && map.toDiscoverMarker == null) {
+				map.drawToDiscoverMarker(map, game.stationToDiscover.fields.coord[1], game.stationToDiscover.fields.coord[0]);
+				map.drawPlayerMarker(map, event.lngLat.lng, event.lngLat.lat);
+				map.drawLineBetweenMarkers(map, [
+			        [game.stationToDiscover.fields.coord[1], game.stationToDiscover.fields.coord[0]],
+			        [event.lngLat.lng, event.lngLat.lat]
+			    ]);
 
-				map.markerEl2 = document.createElement('div');
-				map.markerEl2.className = 'point rounded red';
-				map.marker2 = new mapboxgl.Marker(map.markerEl2)
-					.setLngLat([event.lngLat.lng, event.lngLat.lat])
-				  	.addTo(map.mapbox);
-
-				game.score += Math.floor(map.calcDist(game.stationToDiscover.fields.stop_lat, event.lngLat.lat,
-				game.stationToDiscover.fields.stop_lon, event.lngLat.lng) * 100);
-
-				map.line = map.mapbox.addLayer({
-			        "id": "route",
-			        "type": "line",
-			        "source": {
-			            "type": "geojson",
-			            "data": {
-			                "type": "Feature",
-			                "properties": {},
-			                "geometry": {
-			                    "type": "LineString",
-			                    "coordinates": [
-			                        [game.stationToDiscover.fields.stop_lon, game.stationToDiscover.fields.stop_lat],
-			                        [event.lngLat.lng, event.lngLat.lat]
-			                    ]
-			                }
-			            }
-			        },
-			        "layout": {
-			            "line-join": "round",
-			            "line-cap": "round"
-			        },
-			        "paint": {
-			            "line-color": "rgba(52, 73, 94,1.0)",
-			            "line-width": 5
-			        }
-			    });
-				game.turnPlayed();
+				game.updateScore(Math.floor(map.calcDist(game.stationToDiscover.fields.coord[0], event.lngLat.lat,
+				game.stationToDiscover.fields.coord[1], event.lngLat.lng) * 100));
 			}
 		});
 	}
@@ -96,13 +100,21 @@ class Map {
 	}
 
 	removeMarkers() {
-		this.marker.remove();
-		this.marker2.remove();
-		this.mapbox.removeLayer("route");
-		this.mapbox.removeSource("route");
-		this.markerEl = null;
-		this.markerEl2 = null;
-		this.line = null;
+		if (this.toDiscoverMarker != null) {
+			this.toDiscoverMarker.remove();
+			this.toDiscoverMarker = null;
+			this.toDiscoverMarkerEl = null;
+		}
+		if (this.playerMarker != null) {
+			this.playerMarker.remove();
+			this.playerMarker = null;
+			this.playerMarkerEl = null;
+		}
+		if (this.line != null) {
+			this.mapbox.removeLayer("route");
+			this.mapbox.removeSource("route");
+			this.line = null;
+		}	
 	}
 
 }
