@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/play', 'GameController@play')->name('play');
+
+Route::get('/api/getStations', 'GameController@getStations')->name('getStations');

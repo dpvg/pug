@@ -2,66 +2,42 @@ class Game {
 
 	constructor(mapConfig) {
 		this.map = new Map(mapConfig);
-		this.map.init();
-		this.stations = null;
+		this.ui = new GameUI();
 		
-
+		this.stations = null;
 		this.stationToDiscover = null;
-		this.turn = 1;
+		this.turn = 0;
 		this.score = 0;
-		this.gameButton = $("#gameButton");
-		this.startButton = $("#startButton");
-		this.firstScreen = $(".firstScreen");
-		this.gameScreen = $(".gameScreen");
-		this.menu = $("#gameMenu");
-		this.scoreSpan = $("#score span");
-		this.turnSpan = $("#turn span");
-		this.toDiscoverSpan = $('#toDiscover span');
 
 		this.event = new Event('available');
 	}
 
-	restart() {
-		this.stationToDiscover = null;
-		this.turn = 1;
-		this.score = 0;
-		this.turnSpan.text(this.turn);
-		this.toDiscoverSpan.text("");
-		this.map.restart();
-	}
-
 	init() {
 		this.loadStations();
-		this.setUpEventsListeners();
+		this.map.init();
+		this.map.setUpEventListener(this);
+		this.ui.init(this);
 		window.dispatchEvent(this.event);
 	}
 
-	setUpEventsListeners() { 
-		var game = this;
-		this.gameButton.on('click', function() {
-			++game.turn;
-			game.turnSpan.text(game.turn);	
-			game.launch();
-		});
-
-		this.startButton.on('click', function() {
-			game.firstScreen.hide();
-			game.menu.slideDown();
-		});
-
-		$(window).on('available', function() {
-			game.startButton.fadeIn();
-		});
-
-		this.map.setUpEventListener(this);
+	restart() {
+		this.stationToDiscover = null;
+		this.turn = 0;
+		this.score = 0;
+		this.map.restart();
+		this.ui.restartUI();
 	}
 
+	/**
+	* Difficile de changer de liste de sations, les structures n'étant pas les mêmes
+	*/
 	loadStations() {
 		this.stations = JSON.parse(localStorage.getItem("stations"));
 		if (this.stations === null) {
 			$.get({
-				url: "https://data.ratp.fr/api/records/1.0/search/?dataset=positions-geographiques-des-stations-du-reseau-ratp&lang=fr&rows=6345&facet=stop_name&facet=departement&refine.departement=75", // NIVEAU COMPLEXE TOUT (BUS TRAM METRO ...)
+				//url: "https://data.ratp.fr/api/records/1.0/search/?dataset=positions-geographiques-des-stations-du-reseau-ratp&lang=fr&rows=6345&facet=stop_name&facet=departement&refine.departement=75", // NIVEAU COMPLEXE TOUT (BUS TRAM METRO ...)
 				//url : "http://pwebc.projet.local/resources/stations.json", // NIVEAU SIMPLE (METRO UNIQUEMENT)
+				url : "http://pwebc.projet.local/api/getStations",
 				success: function(data) {
 					this.stations = data;
 					localStorage.setItem("stations", JSON.stringify(this.stations));
@@ -73,24 +49,28 @@ class Game {
 		}
 	}
 
-	launch() {
+	initTurn() {
+		++this.turn;
 		if (this.turn <= 5) {
-			if (this.turn>1)
-				this.map.removeMarkers();
-			var nbStationToDiscover = Math.floor(Math.random() * Math.floor(this.stations.records.length));
-			this.stationToDiscover = this.stations.records[nbStationToDiscover];
-			this.toDiscoverSpan.text(this.stationToDiscover.fields.stop_name);
-		}
-		else {
-			this.restart();
-			this.firstScreen.slideDown();
-			this.launch();
-			this.menu.slideUp();
+			this.map.removeMarkers();
+
+			this.stationToDiscover = this.stations[Math.floor(Math.random()*this.stations.length)];
+			this.ui.refreshToDiscover(this.stationToDiscover);
 		}
 	}
 
-	turnPlayed() {
-		this.scoreSpan.text(this.score);
+	updateScore(score) {
+		this.score += score;
+		this.ui.updateScoreSpan(this.score);
+		this.checkEnd();
 	}
 
+	/**
+	* A retravailler
+	*/
+	checkEnd() {
+		if (this.turn >= 5) {
+			this.ui.showEnd(this.score);
+		}
+	}
 }
